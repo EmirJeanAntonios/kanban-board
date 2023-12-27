@@ -1,15 +1,75 @@
 import "./App.scss";
+import KanbanCard from "./components/KanbanCard/KanbanCard";
 import KanbanWrapper from "./components/KanbanWrapper/KanbanWrapper";
 function App() {
   return (
     <main>
-      <section>
+      <section className="kanban_section_wrapper">
         <KanbanWrapper title="Backlog">
-          <div>1</div>
-          <div>1</div>
-          <div>1</div>
-          <div>1</div>
-          <div>1</div>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>
+        <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>
+        <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>
+        <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>
+        <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>
+        <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>   <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>   <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>   <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+        </KanbanWrapper>   <KanbanWrapper title="Backlog">
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
         </KanbanWrapper>
       </section>
     </main>

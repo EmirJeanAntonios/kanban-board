@@ -1,5 +1,11 @@
 main {
-    padding: 20px;
+    padding: 10px;
     height: 100vh;
     overflow: hidden;
+    .kanban_section_wrapper{
+        display: flex;
+        gap: 20px;
+        height: 100%;
+        overflow-x: auto;
+    }
 }
