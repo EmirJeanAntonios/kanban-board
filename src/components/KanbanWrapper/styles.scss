@@ -1,0 +1,21 @@
+.kanban_wrapper {
+  &_container {
+    padding: 10px;
+    height: 100%;
+    background-color: #232d3f;
+    border-radius: 5px;
+  }
+
+  &_title {
+    h2 {
+      font-size: 1.5rem;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
