@@ -11,6 +11,9 @@ function App() {
           <KanbanCard>1</KanbanCard>
           <KanbanCard>1</KanbanCard>
           <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
+          <KanbanCard>1</KanbanCard>
         </KanbanWrapper>
         <KanbanWrapper title="Backlog">
           <KanbanCard>1</KanbanCard>

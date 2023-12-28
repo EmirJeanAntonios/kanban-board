@@ -1,23 +1,31 @@
 .kanban_wrapper {
+  height: 100%;
+  flex: 1 0 20%;
   &_container {
     padding: 10px;
-    height: 100%;
     background-color: #232d3f;
     border-radius: 5px;
-    flex: 1 0 20%;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+    display: grid;
+    grid-template-rows: 30px auto 30px;
+    gap: 5px;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+      rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
   }
 
   &_title {
     h2 {
       font-size: 1.5rem;
       margin: 0;
-      margin-bottom: 15px;
     }
   }
   &_content {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow-y: auto;
+  }
+  &_footer {
+  
   }
 }
