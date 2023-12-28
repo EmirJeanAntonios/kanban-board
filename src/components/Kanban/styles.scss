@@ -6,7 +6,7 @@
     background-color: #232d3f;
     border-radius: 5px;
     display: grid;
-    grid-template-rows: 30px auto 30px;
+    grid-template-rows: 30px auto 50px;
     gap: 5px;
 
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
@@ -26,6 +26,11 @@
     overflow-y: auto;
   }
   &_footer {
-  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_add_button {
+
+    }
   }
 }

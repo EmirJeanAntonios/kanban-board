@@ -1,11 +1,11 @@
 .kanban_card{
-    background-color: #005B41;
+    background-color: #92afd74a;
     padding: 15px;
     border-radius: 5px;
     border: 1px solid transparent;
     cursor: pointer;
     transition: .4s;
-    box-shadow: 5px 5px 5px rgba(#005B41,.3);
+    box-shadow: 5px 5px 15px rgba(#92afd74a,.1);
     &:hover {
         border-color: white;
     }
