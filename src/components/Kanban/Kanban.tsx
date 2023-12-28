@@ -1,7 +1,8 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, useState } from "react";
 import "./styles.scss";
 import KanbanCard from "./KanbanCard/KanbanCard";
 import Button from "../Button/Button";
+import Input from "../Input/Input";
 
 type KanbanProps = {
   title: string;
@@ -19,6 +20,7 @@ const KanbanContext = React.createContext<IKanbanContext | null>(null);
 export const useKanbanContext = () => React.useContext(KanbanContext);
 
 const Kanban: IKanbanComponent = ({ title, children }) => {
+  const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
   const cardCount = React.Children.toArray(children).filter(
     (child) => React.isValidElement(child) && (child as any).type === KanbanCard
   ).length;
@@ -31,8 +33,26 @@ const Kanban: IKanbanComponent = ({ title, children }) => {
             <h2>{title}</h2>
           </div>
           <div className="kanban_wrapper_content">{children}</div>
+
+          {isFormVisible && (
+            <div className="kanban_wrapper_form">
+              <Input variant="primary" fullWidth />
+              <Button
+                text={<>Add</>}
+                variant="primary"
+                onClick={(event) => console.log(event)}
+                size="small"
+              />
+            </div>
+          )}
+
           <div className="kanban_wrapper_footer">
-              <Button text={<>Add Item</>} variant="primary"  onClick={(event) => console.log(event)} size="medium"/>
+            <Button
+              text={<>Add Item</>}
+              variant="primary"
+              onClick={(event) => setIsFormVisible(!isFormVisible)}
+              size="medium"
+            />
           </div>
         </div>
       </div>
