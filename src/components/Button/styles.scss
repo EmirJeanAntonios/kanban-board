@@ -4,15 +4,26 @@
   font-size: 1rem;
   transition: 0.4s;
   outline: none;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
   cursor: pointer;
+  &:focus {
+    border: 1px solid #ffffff90;
+  }
   &_primary {
     background-color: #008170;
-    color: #fff;
+   
     &:active {
       background-color: #006457;
     }
-    &:focus{
-        border: 1px solid #ffffff90;
+  }
+  &_error {
+    background-color: #b00020;
+    &:active {
+      background-color: #b00020a0;
     }
   }
   &_medium {

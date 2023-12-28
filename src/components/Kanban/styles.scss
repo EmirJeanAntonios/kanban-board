@@ -58,5 +58,11 @@
     align-items: center;
     background-color: #000;
     box-shadow: 3px 3px rgba($color: #000, $alpha: 0.3);
+    &_buttons {
+      display: flex;
+      margin-top: 5px;
+      gap: 10px;
+      align-self: flex-end;
+    }
   }
 }

@@ -3,6 +3,7 @@ import "./styles.scss";
 import KanbanCard from "./KanbanCard/KanbanCard";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
+import { FaPlus } from "react-icons/fa6";
 
 type KanbanProps = {
   title: string;
@@ -36,24 +37,39 @@ const Kanban: IKanbanComponent = ({ title, children }) => {
 
           {isFormVisible && (
             <div className="kanban_wrapper_form">
-              <Input variant="primary" fullWidth />
-              <Button
-                text={<>Add</>}
-                variant="primary"
-                onClick={(event) => console.log(event)}
-                size="small"
-              />
+              <Input variant="primary" fullWidth placeholder="TODO..." />
+              <div className="kanban_wrapper_form_buttons">
+                <Button
+                  text={"Add"}
+                  variant="primary"
+                  onClick={(event) => console.log(event)}
+                  size="small"
+                  rightEndAdornment={<FaPlus />}
+                />
+                <Button
+                  text={"Close"}
+                  variant="error"
+                  onClick={(event) => setIsFormVisible(false)}
+                  size="small"
+                />
+              </div>
             </div>
           )}
 
-          <div className="kanban_wrapper_footer">
-            <Button
-              text={<>Add Item</>}
-              variant="primary"
-              onClick={(event) => setIsFormVisible(!isFormVisible)}
-              size="medium"
-            />
-          </div>
+          {!isFormVisible && (
+            <div className="kanban_wrapper_footer">
+              <Button
+                text={
+                  <>
+                    Add Item <FaPlus />
+                  </>
+                }
+                variant="primary"
+                onClick={(event) => setIsFormVisible(!isFormVisible)}
+                size="medium"
+              />
+            </div>
+          )}
         </div>
       </div>
     </KanbanContext.Provider>
